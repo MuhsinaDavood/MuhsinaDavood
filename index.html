@@ -7,45 +7,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; scroll-behavior: smooth; }
-    body { background-color: #fdf6f0; color: #333; line-height: 1.6; }
+    body { background-color: #fafafa; color: #333; line-height: 1.6; }
 
     /* Header */
-    header { background: linear-gradient(135deg, #ff7f7f, #ffd1a4); text-align: center; padding: 100px 20px; color: #fff; }
-    header h1 { font-size: 3em; margin-bottom: 15px; }
-    header p { font-size: 1.3em; margin-bottom: 25px; font-weight: 400; }
-    header a { text-decoration: none; background: #fff; color: #ff6f61; padding: 12px 30px; border-radius: 50px; font-weight: bold; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-    header a:hover { background: #ff6f61; color: #fff; box-shadow: 0 8px 20px rgba(0,0,0,0.3); transform: translateY(-3px); }
+    header { text-align: center; padding: 80px 20px; }
+    header h1 { font-size: 3em; margin-bottom: 10px; color: #ff6f61; }
+    header p { font-size: 1.2em; color: #555; margin-bottom: 25px; }
+    header a { text-decoration: none; background: #ff6f61; color: #fff; padding: 10px 25px; border-radius: 50px; font-weight: bold; transition: 0.3s; }
+    header a:hover { background: #ff4f41; }
 
-    /* Section titles */
-    section { max-width: 1100px; margin: 60px auto; padding: 0 20px; }
-    h2 { text-align: center; font-size: 2.3em; margin-bottom: 35px; color: #ff6f61; }
+    /* Sections */
+    section { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+    h2 { text-align: center; font-size: 2em; margin-bottom: 35px; color: #ff6f61; }
 
-    /* About Me */
-    #about p { text-align: center; font-size: 1.1em; max-width: 800px; margin: auto; }
+    /* About */
+    #about p { text-align: center; font-size: 1.1em; max-width: 800px; margin: auto; color: #555; }
 
     /* Skills */
-    .skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; }
-    .skill-card { background: #fff3e6; padding: 18px 25px; border-radius: 12px; min-width: 140px; text-align: center; font-weight: bold; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-    .skill-card:hover { transform: scale(1.08); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .skill-card { background: #fff; padding: 12px 20px; border-radius: 10px; min-width: 120px; text-align: center; font-weight: bold; color: #ff6f61; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: 0.3s; }
+    .skill-card:hover { transform: scale(1.05); }
 
     /* Projects */
-    .projects { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
-    .project-card { background: #fff; border-radius: 15px; overflow: hidden; width: 280px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.4s; }
-    .project-card img { width: 100%; height: 180px; object-fit: cover; transition: 0.3s; }
+    .projects { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .project-card { background: #fff; border-radius: 12px; overflow: hidden; width: 260px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: 0.3s; }
+    .project-card img { width: 100%; height: 160px; object-fit: cover; transition: 0.3s; }
     .project-card:hover img { transform: scale(1.05); }
-    .project-card div { padding: 20px; }
-    .project-card h3 { color: #ff6f61; margin-bottom: 10px; font-size: 1.2em; }
-    .project-card p { font-size: 0.95em; color: #555; margin-bottom: 12px; }
-    .project-card a { text-decoration: none; color: #fff; background: linear-gradient(135deg, #ff7f7f, #ffd1a4); padding: 8px 15px; border-radius: 25px; font-weight: bold; transition: 0.3s; display: inline-block; }
-    .project-card a:hover { background: linear-gradient(135deg, #ffd1a4, #ff7f7f); transform: translateY(-2px); }
+    .project-card div { padding: 15px; }
+    .project-card h3 { color: #ff6f61; margin-bottom: 8px; font-size: 1.1em; }
+    .project-card p { font-size: 0.95em; color: #555; margin-bottom: 10px; }
+    .project-card a { text-decoration: none; color: #fff; background: #ff6f61; padding: 6px 15px; border-radius: 25px; font-weight: bold; transition: 0.3s; }
+    .project-card a:hover { background: #ff4f41; }
 
     /* Contact */
     .contact { text-align: center; }
-    .contact p { margin: 10px 0; font-size: 1.1em; }
+    .contact p { margin: 8px 0; font-size: 1em; color: #555; }
     .contact a { color: #ff6f61; text-decoration: none; font-weight: bold; }
 
     /* Footer */
-    footer { text-align: center; padding: 25px; background: linear-gradient(135deg, #ff7f7f, #ffd1a4); color: #fff; margin-top: 50px; }
+    footer { text-align: center; padding: 20px; margin-top: 50px; font-size: 0.9em; color: #999; }
 
     @media (max-width: 650px) {
       .skills, .projects { flex-direction: column; align-items: center; }
@@ -54,17 +54,17 @@
 </head>
 <body>
 
-  <!-- Header / Home -->
+  <!-- Header -->
   <header>
     <h1>Muzi Davood</h1>
     <p>Software Developer | Full-Stack Developer | Django & React</p>
     <a href="#contact">Contact Me</a>
   </header>
 
-  <!-- About Me -->
+  <!-- About -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I’m Muzi, a passionate Software Developer with experience in Django, React, PostgreSQL, and full-stack development. I enjoy creating efficient solutions and modern, beautiful interfaces. My goal is to deliver high-quality projects and continuously learn new technologies.</p>
+    <p>Hello! I’m Muzi, a passionate Software Developer with experience in Django, React, PostgreSQL, and full-stack development. I enjoy building clean, efficient, and modern web applications, and continuously improving my skills in software development.</p>
   </section>
 
   <!-- Skills -->
@@ -72,7 +72,7 @@
     <h2>Skills</h2>
     <div class="skills">
       <div class="skill-card">Django & DRF</div>
-      <div class="skill-card">React & JavaScript</div>
+      <div class="skill-card">React & JS</div>
       <div class="skill-card">HTML & CSS</div>
       <div class="skill-card">PostgreSQL</div>
       <div class="skill-card">Data Analysis</div>
@@ -86,16 +86,16 @@
     <div class="projects">
 
       <div class="project-card">
-        <img src="https://via.placeholder.com/280x180.png?text=Bank+Management" alt="Bank Management System">
+        <img src="https://via.placeholder.com/260x160.png?text=Bank+Management" alt="Bank Management System">
         <div>
           <h3>Bank Management System</h3>
-          <p>Java project to manage bank accounts and transactions efficiently.</p>
+          <p>Java project to manage accounts, transactions, and reports efficiently.</p>
           <a href="https://github.com/yourusername/bank-management-system" target="_blank">View Project</a>
         </div>
       </div>
 
       <div class="project-card">
-        <img src="https://via.placeholder.com/280x180.png?text=Malicious+Website" alt="Malicious Website Detection">
+        <img src="https://via.placeholder.com/260x160.png?text=Malicious+Website" alt="Malicious Website Detection">
         <div>
           <h3>Malicious Website Detection</h3>
           <p>MLP-based project for detecting potentially harmful websites.</p>
@@ -104,7 +104,7 @@
       </div>
 
       <div class="project-card">
-        <img src="https://via.placeholder.com/280x180.png?text=E-commerce" alt="E-commerce Website">
+        <img src="https://via.placeholder.com/260x160.png?text=E-commerce" alt="E-commerce Website">
         <div>
           <h3>E-commerce Website</h3>
           <p>Online shopping platform built using WordPress and Shopify.</p>
@@ -113,7 +113,7 @@
       </div>
 
       <div class="project-card">
-        <img src="https://via.placeholder.com/280x180.png?text=Admin+Dashboard" alt="Super Admin Dashboard">
+        <img src="https://via.placeholder.com/260x160.png?text=Admin+Dashboard" alt="Super Admin Dashboard">
         <div>
           <h3>Super Admin Dashboard</h3>
           <p>Full-stack dashboard using React frontend and Django backend.</p>
