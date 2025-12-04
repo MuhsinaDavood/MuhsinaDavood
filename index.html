@@ -2,57 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Muhsina Davood | Software Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muzi Davood | Software Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff5f0; color: #333; }
-    header { background-color: #ffb366; padding: 50px 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5em; color: #fff; }
-    header h2 { margin: 10px 0 0; color: #fff8f0; font-weight: normal; }
-    section { padding: 50px 20px; max-width: 900px; margin: auto; }
-    h3 { color: #ff7f50; }
-    ul { list-style: none; padding: 0; }
-    ul li { background: #ffd9b3; margin: 5px 0; padding: 10px; border-radius: 5px; }
-    a { color: #ff7f50; text-decoration: none; }
-    footer { text-align: center; padding: 20px; background: #ffb366; color: #fff; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; }
+    body { background-color: #fff0e6; color: #333; line-height: 1.6; }
+    header { background-color: #ffb366; color: #fff; text-align: center; padding: 80px 20px; }
+    header h1 { font-size: 3em; margin-bottom: 10px; }
+    header p { font-size: 1.2em; margin-bottom: 20px; }
+    header a { text-decoration: none; color: #fff; border: 2px solid #fff; padding: 10px 20px; border-radius: 25px; transition: 0.3s; }
+    header a:hover { background-color: #fff; color: #ff7f50; }
+
+    section { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+    h2 { color: #ff7f50; font-size: 2em; margin-bottom: 20px; text-align: center; }
+
+    /* Skills */
+    .skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .skill-card { background: #ffd9b3; padding: 15px 20px; border-radius: 10px; min-width: 120px; text-align: center; transition: 0.3s; }
+    .skill-card:hover { transform: scale(1.05); }
+
+    /* Projects */
+    .projects { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .project-card { background: #fff5e6; padding: 20px; border-radius: 15px; width: 250px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+    .project-card a { text-decoration: none; color: #ff7f50; font-weight: bold; }
+
+    /* Contact */
+    .contact p { text-align: center; margin: 10px 0; }
+    .contact a { color: #ff7f50; text-decoration: none; font-weight: bold; }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px; background-color: #ffb366; color: #fff; margin-top: 50px; }
+
+    @media (max-width: 600px) {
+      .skills, .projects { flex-direction: column; align-items: center; }
+    }
   </style>
 </head>
 <body>
+
+  <!-- Header / Home -->
   <header>
-    <h1>Muhsina Davood</h1>
-    <h2>Software Developer</h2>
-    <p>Welcome to my portfolio!</p>
+    <h1>Muzi Davood</h1>
+    <p>Software Developer | Full-Stack Developer | Django & React</p>
+    <a href="#contact">Contact Me</a>
   </header>
 
-  <section>
-    <h3>Skills</h3>
-    <ul>
-      <li>Django & Django REST Framework</li>
-      <li>React & JavaScript (AJAX, jQuery)</li>
-      <li>HTML, CSS, PostgreSQL</li>
-      <li>Full-Stack Development</li>
-      <li>Data Analysis Basics</li>
-    </ul>
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m Muzi, a passionate Software Developer with experience in Django, React, PostgreSQL, and building full-stack applications. I love creating efficient solutions and beautiful user interfaces.</p>
   </section>
 
-  <section>
-    <h3>Projects</h3>
-    <ul>
-      <li><a href="#">Bank Management System (Java)</a></li>
-      <li><a href="#">Malicious Website Detection (MLP)</a></li>
-      <li><a href="#">E-commerce Website (WordPress & Shopify)</a></li>
-      <li><a href="#">Super Admin Dashboard (React + Django)</a></li>
-    </ul>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-card">Django & DRF</div>
+      <div class="skill-card">React & JavaScript</div>
+      <div class="skill-card">HTML & CSS</div>
+      <div class="skill-card">PostgreSQL</div>
+      <div class="skill-card">Data Analysis Basics</div>
+      <div class="skill-card">Full-Stack Development</div>
+    </div>
   </section>
 
-  <section>
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:your.email@example.com">muhsinad8@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <a href="#">Bank Management System</a>
+        <p>Java project to manage bank accounts and transactions.</p>
+      </div>
+      <div class="project-card">
+        <a href="#">Malicious Website Detection</a>
+        <p>MLP-based project for detecting harmful websites.</p>
+      </div>
+      <div class="project-card">
+        <a href="#">E-commerce Website</a>
+        <p>Built using WordPress and Shopify for online shopping.</p>
+      </div>
+      <div class="project-card">
+        <a href="#">Super Admin Dashboard</a>
+        <p>Full-Stack dashboard using React frontend and Django backend.</p>
+      </div>
+    </div>
   </section>
 
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Muhsina Davood. All rights reserved.</p>
+    <p>© 2025 Muzi Davood. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
+
